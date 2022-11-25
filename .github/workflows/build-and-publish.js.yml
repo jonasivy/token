@@ -36,7 +36,7 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
           cache: 'npm'
-      - run: npm install
       - uses: JS-DevTools/npm-publish@v1
         with:
+          access: restricted
           token: ${{ secrets.NPM_TOKEN }}
