@@ -25,7 +25,9 @@ jobs:
     - name: Update Version
       run: npm version patch
     - name: Push
-      run: git push origin main
+      run: |
+        git pull origin main
+        git push origin main
   publish:
     needs: build
     runs-on: ubuntu-latest
