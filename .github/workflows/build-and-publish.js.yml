@@ -27,9 +27,7 @@ jobs:
     - name: Update Version
       run: npm version patch
     - name: Push
-      run: |
-        yarn publish --prepatch
-        git push origin main
+      run: git push origin main
   publish:
 
     runs-on: ubuntu-latest
