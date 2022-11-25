@@ -25,6 +25,10 @@ jobs:
         git config user.email github-actions@github.com
     - name: Update Version
       run: npm version patch
+    - name: Push
+      run: |
+        yarn publish --prepatch
+        git push origin main
   publish:
 
     runs-on: ubuntu-latest
