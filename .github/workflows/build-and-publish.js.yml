@@ -42,5 +42,3 @@ jobs:
         with:
           access: public
           token: ${{ secrets.NPM_TOKEN }}
-      - name: Publish to NPM
-        run: npm publish
