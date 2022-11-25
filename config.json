@@ -1,0 +1,39 @@
+{
+  "source": ["tokens.json"],
+  "platforms": {
+    "scss": {
+      "transformGroup": "scss",
+      "buildPath": "build/scss/",
+      "files": [{
+        "destination": "_variables.scss",
+        "format": "scss/variables"
+      }]
+    },
+    "compose": {
+      "transformGroup": "compose",
+      "buildPath": "build/compose/",
+      "files": [{
+        "destination": "StyleDictionaryColor.kt",
+        "format": "compose/object",
+        "className": "StyleDictionaryColor",
+        "packageName": "StyleDictionaryColor",
+        "filter": {
+          "attributes": {
+            "category": "color"
+          }
+        }
+      },{
+        "destination": "StyleDictionarySize.kt",
+        "format": "compose/object",
+        "className": "StyleDictionarySize",
+        "packageName": "StyleDictionarySize",
+        "type": "float",
+        "filter": {
+          "attributes": {
+            "category": "size"
+          }
+        }
+      }]
+    }
+  }
+}
