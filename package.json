@@ -1,6 +1,6 @@
 {
   "name": "design-token",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "Figma Token Package",
   "main": "index.js",
   "scripts": {
