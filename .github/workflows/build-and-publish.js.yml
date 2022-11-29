@@ -40,5 +40,5 @@ jobs:
           cache: 'npm'
       - uses: JS-DevTools/npm-publish@v1
         with:
-          access: public
+          access: restricted
           token: ${{ secrets.NPM_TOKEN }}
